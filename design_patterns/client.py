@@ -9,12 +9,5 @@ def consumer(creator: TransportationCreator):
     print(f"This is how my package will be delivered: {transport.delivery()}")
 
 if __name__ == "__main__":
-    try:
-        consumer(TruckCreator())
-    except ModuleNotFoundError as module:
-        print(module)
-    except ImportError as import_e:
-        print(import_e)
+    consumer(TruckCreator())
 
-    finally:
-        os.path
