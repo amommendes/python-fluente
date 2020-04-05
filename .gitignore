@@ -3,3 +3,4 @@
 /book/env/*
 pyvenv.cfg
 book/chapter2/.ipynb_checkpoints/*
+*.ipynb_checkpoints
