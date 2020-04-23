@@ -48,23 +48,34 @@ class Manual():
         self.trip_computer = None
         self.gps = None
 
+    def describe(self):
+        print(f"""This your manual. Please read carefully.\n""" +
+        f"""Seats: {self.seats}\nEngine: {self.engine}\nHas Trip Computer: {self.trip_computer}\nHas GPS: {self.gps}""")
+
 class ManualBuilder(GenericBuilder):
     def __init__(self):
-        self.manual = Manual()
+        self.car = None
+        self.reset()
 
+    @property
     def product(self) -> Manual:
-        return self.manual
+        car = self.car
+        self.reset()
+        return car
 
-    def setEngine(self):
-        pass
+    def reset(self) -> None:
+        self.car = Manual()
 
     def setSeats(self, number) -> None:
-        pass
+        self.car.seats = number
 
-    def setGPS(self) -> None:
-        pass
 
-    def setTripComputer(self) -> None:
-        pass
+    def setEngine(self, engine):
+        self.car.engine = engine
 
+    def setGPS(self, has_gps) -> None:
+        self.car.gps = has_gps
+
+    def setTripComputer(self, has_trip_computer) -> None:
+        self.car.trip_computer = has_trip_computer
 
