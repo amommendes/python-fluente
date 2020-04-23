@@ -16,7 +16,7 @@ class Dog(Animal):
         print("Au, au! is the sound that %s (my superClass Name or %s to my friends) produces" %  (self.superName, self.InstanceDogName ))
     
     def eat(self):
-        return "As a superAnimal I could eat anything. But as a Dog I can eat just eat somethings" 
+        return "As a superAnimal I could eat anything. But as a Dog I can eat just somethings"
 
         
 
