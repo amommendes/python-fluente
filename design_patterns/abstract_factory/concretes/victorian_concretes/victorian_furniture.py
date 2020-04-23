@@ -12,7 +12,7 @@ class VictorianChair(Chair):
 
     @staticmethod
     def has_gold():
-        return False
+        return True
 
     @staticmethod
     def size():
