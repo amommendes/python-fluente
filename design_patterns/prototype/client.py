@@ -2,6 +2,9 @@ import copy
 from design_patterns.prototype.cells.cell import Cell, Cloner
 
 if __name__ == "__main__":
+    """
+    Genetic engineering cloning cells, which are identical its parent cells
+    """
     mitochondria = ["mitochondria"]
     ribosomes = [{10}]
     cell = Cell()

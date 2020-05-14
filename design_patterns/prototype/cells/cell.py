@@ -1,3 +1,7 @@
+"""
+This pattern implements clones of some component using copy lib, which will clone
+the objects into new ones with the same attributes (i.e., same memory address)
+"""
 import copy
 
 
