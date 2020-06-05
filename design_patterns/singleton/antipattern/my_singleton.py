@@ -6,9 +6,10 @@ class SingletonMeta(type):
     _instance: Optional[MySingleton] = None
 
     def __call__(self) -> MySingleton:
-        self.my_id(self)
         if self._instance is None:
+            print("First time, take a new brand Singleton")
             self._instance = super().__call__()
+        self.my_id(self)
         return self._instance
 
     def __repr__(self):
