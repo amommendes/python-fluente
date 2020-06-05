@@ -1,10 +1,10 @@
-from abc import ABC,abstractmethod
+from abc import ABC, abstractmethod
 
 
 class Chair(ABC):
     
     @abstractmethod
-    def color():
+    def color(self):
         pass
 
     @abstractmethod
