@@ -1,5 +1,3 @@
-import os
-
 from design_patterns.factory.creators.transport_creators import TransportationCreator, TruckCreator
 
 def consumer(creator: TransportationCreator):

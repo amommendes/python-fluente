@@ -9,7 +9,9 @@ class Car:
         self.gps = None
 
     def describe(self):
-        print(f"""Seats: {self.seats}\nEngine: {self.engine}\nHas Trip Computer: {self.trip_computer}\nHas GPS: {self.gps}""")
+        print(f"Seats: {self.seats}\nEngine: {self.engine}\n"
+              f"Has Trip Computer: {self.trip_computer}\nHas GPS: {self.gps}")
+
 
 class CarBuilder(GenericBuilder):
 
